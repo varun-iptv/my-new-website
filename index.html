@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	   <title>Live-tv | Varun-Iptv</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i'>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+<link rel="stylesheet" href="./style.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap'>
+<link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css'><link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amita">
+<link rel="shortcut icon" type="image/x-icon" href="https://i.postimg.cc/vT2qvD6w/1652236607904-removebg.png">
+
+<style>
+	#typing-text {
+	width: 100%;
+	height: 40px;
+	font-size: 15px;
+	border: solid 1px #ffffff;
+	color: #000000;
+	background-color: #ffffff;
+	text-align: center;
+	font-family: Amita, cursive;
+	font-weight: bold;
+	padding: 5px;
+	resize: none;
+	outline: none;
+	box-sizing: border-box;
+}
+  	#livebbtvTable {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(110px, 0fr));
+        grid-gap: 15px;
+        grid-right: 10px;
+        grid-left: 10px;
+        justify-content: center; 
+      }
+      #livebbtvTable > div {
+        font-size: 12px;
+        color: Black;
+        text-align: center;
+      }
+       .livebbtv-item { 
+   border: 1.5px solid #490a3d; 
+  width: 110px; 
+  height: 145px; 
+  overflow: hidden; 
+  border-radius: 5px; 
+  box-shadow: 2px 2px 5px rgba(0,0,0, .3); 
+  
+} 
+       .livebbtv-thumb:hover { 
+filter: blur(3px);
+  transform: scale(0.97);
+  }
+.livebbtv-thumb img { 
+    width: 100%; 
+    height: 105px;     
+}
+.livebbtv-name{
+  color: #000000;
+  border-radius: 5px;
+  margin-top: -5px; 
+  padding: 3px; 
+  border-top: 1.5px solid #490a3d; 
+}
+  a{
+  	text-decoration: none;
+  	}
+  .ddlFilterTableRow{
+  	font-family: Amita, cursive;
+  	width:200px;
+      font-size:16px;
+      padding:5px;
+      text-decoration: none;
+      background-color:#FFFFFF;
+       border: solid 2px #007bff;
+       border-radius: 5px; 
+      color:#007bff;"
+  }
+  
+    .up {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    font-size: 15px;
+    background-color: #007bff;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+  }
+
+  	</style>
+  
+</head>
+<body>
+	<i class="uil uil-angle-up up"></i>
+<nav>
+        <div class="nav-bar">
+            <span class="logo navLogo"><a href="#">Varun-iptv</a></span>
+            
+                <div class="searchBox">
+                   <div class="searchToggle">
+                    <i class='bx bx-x cancel'></i>
+                    <i class='bx bx-search search'></i>
+                   </div>
+                    <div class="search-field">
+                        <input type="text" placeholder="Search..." id="look_tv_here">
+                        <i class='bx bx-search'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <br><br><br>
+    	<textarea id="typing-text" readonly></textarea>
+    	<center>
+         <select class='ddlFilterTableRow' data-attribute='genre' id='ddlAge'> <option value='0'>All-Live-Channels</option> 
+<option value='kids'>kids</option> 
+<option value='star'>Star Channel's</option> 
+<option value='sun'>Sunnxt</option> 
+<option value='zee'>Zee5</option> 
+<option value='sony'>Sonyliv</option> 
+<option value='discovery'>Discovery</option> <option value='epic'>Epic</option> 
+<option value='voot'>Voot</option> 
+ </select> 
+ </center>
+ <br>
+ 
+ 
+ <div class="main" id="ch_list">
+ <div> 
+ <div id='livebbtvTable'>
+ 	<div class="livebbtv-item"> <a  href="https://t.me/varun114iptv"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://i.postimg.cc/vT2qvD6w/1652236607904-removebg.png" "  width="110px" height="100px" ><div class="livebbtv-name">Telegram</div></div> </a> </div>
+    <div class="livebbtv-item"> <a  href="https://discord.gg/A2stPn766e"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://i.postimg.cc/vT2qvD6w/1652236607904-removebg.png" width="110px" height="110px"><div class="livebbtv-name">Discord </div></div> </a> </div>
+     <div class="livebbtv-item" data-genre="kids"> <a  href="https://Disney-india.varun114-techno.repl.co"  > <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://upload.wikimedia.org/wikipedia/commons/d/d2/2019_Disney_Channel_logo.svg" width="110px" height="110px"> <div class="livebbtv-name">Disney channel {Multi audio}</div></div> </a> </div>
+     <div class="livebbtv-item" data-genre="kids"> <a  href="https://super-hungama.varun-iptv.repl.co/" > <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://upload.wikimedia.org/wikipedia/en/7/74/Super_Hungama_Logo.png" width="110px" height="110px"> <div class="livebbtv-name">Super Hungama {Multi audio}</div></div> </a> </div>
+     <div class="livebbtv-item" data-genre="star"> <a  href="https://hot-star.varun-iptv.repl.co/24.html"  > <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://cdn.statically.io/img/i.postimg.cc/tg9j476D/Star-Sports-1-HD-Hindi.png" width="110px" height="110px"> <div class="livebbtv-name">Star Sports Hindi </div></div> </a> </div>
+     <div class="livebbtv-item" data-genre="star"> <a  href="https://hot-star.varun-iptv.repl.co/78.html"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://cdn.statically.io/img/i.postimg.cc/mD2B8h2h/Star-Sports-1-HD.png" width="110px" height="110px"> <div class="livebbtv-name">Star Sports HD 1</div></div> </a> </div>
+     <div class="livebbtv-item" data-genre="star"> <a  href="https://hot-star.varun-iptv.repl.co/235.html"  > <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYjD8nF6UuA9m2hEn1rW5BWh4-1SgfhD22GSW0mkbk-fYruHKx5ZbDsIY&s=10" width="110px" height="110px"> <div class="livebbtv-name">Star Sports 2</div></div> </a> </div>
+     <div class="livebbtv-item" data-genre="star"> <a  href="https://hot-star.varun-iptv.repl.co/246.html"  > <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://static.wikia.nocookie.net/logopedia/images/3/37/Star-sports-select-1.png" width="110px" height="110px"> <div class="livebbtv-name">Star Sports Select 1 HD</div></div> </a> </div>
+     <div class="livebbtv-item" data-genre="star"> <a  href="https://hot-star.varun-iptv.repl.co/463.html"  > <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://static.wikia.nocookie.net/logopedia/images/3/3b/Star-sports-select-2.png" width="110px" height="110px"> <div class="livebbtv-name">Star Sports Select 2 HD</div></div> </a> </div>
+     <div class="livebbtv-item" data-genre="star"> <a  href="https://hot-star.varun-iptv.repl.co/244.html"  > <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Star_Bharat_2022.png/640px-Star_Bharat_2022.png" width="110px" height="110px"> <div class="livebbtv-name">Star Bharat HD</div></div> </a> </div>
+     <div class="livebbtv-item" data-genre="star"> <a  href="https://hot-star.varun-iptv.repl.co/8.html"  > <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://static.wikia.nocookie.net/logopedia/images/3/32/StarPlus_logo_%282018%29.png" width="110px" height="110px"> <div class="livebbtv-name">Star Plus HD</div></div> </a> </div>
+     <div class="livebbtv-item" data-genre="star"> <a  href="https://hot-star.varun-iptv.repl.co/245.html"  > <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Star_Gold_2020.svg/1200px-Star_Gold_2020.svg.png" width="110px" height="110px"> <div class="livebbtv-name">Star Gold HD </div></div> </a> </div>
+     <div class="livebbtv-item" data-genre="star"> <a  href="https://hot-star.varun-iptv.repl.co/516.html"  > <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://static.wikia.nocookie.net/logopedia/images/d/df/Star_maa.png" width="110px" height="110px"> <div class="livebbtv-name">Star Maa HD </div></div> </a> </div>
+     <div class="livebbtv-item" data-genre="star"> <a  href="https://hot-star.varun-iptv.repl.co/957.html"  > <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMj_MhI6mBmMJPVJ1qnwTUmG-xzlSjAbxh9A&usqp=CAU" width="110px" height="110px"> <div class="livebbtv-name">Star Maa Movies HD</div></div> </a> </div>
+     <div class="livebbtv-item" data-genre="star"> <a  href="https://hot-star.varun-iptv.repl.co/388.html"  > <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNNBpvNnEmqgxymIf6A_XNzFUz0PgVRLHXbQ&usqp=CAU" width="110px" height="110px"> <div class="livebbtv-name">Star Maa Gold </div></div> </a> </div>
+     <div class="livebbtv-item" data-genre="star"> <a  href="https://hot-star.varun-iptv.repl.co/467.html"  > <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://static.wikia.nocookie.net/logopedia/images/d/d0/Star_Suvarna_2020.png" width="110px" height="110px"> <div class="livebbtv-name">Star Suvarna HD</div></div> </a> </div>
+     <div class="livebbtv-item" data-genre="star"> <a  href="https://hot-star.varun-iptv.repl.co/468.html"  > <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://static.wikia.nocookie.net/logopedia/images/4/49/Star_Jalsha_2012.png" width="110px" height="110px"> <div class="livebbtv-name">Star Jalsha HD</div></div> </a> </div>
+     <div class="livebbtv-item" data-genre="star"> <a  href="https://hot-star.varun-iptv.repl.co/469.html"  > <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://static.wikia.nocookie.net/logopedia/images/1/1a/Star_Pravah_2019.png" width="110px" height="110px"> <div class="livebbtv-name">Star Pravah HD</div></div> </a> </div>
+     <div class="livebbtv-item" data-genre="star"> <a  href="https://hot-star.varun-iptv.repl.co/496.html"  > <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-TBj1iEaiezeJGquUiFRdAefPxKdTgUHuwh3Hi8P42k8TWxJG0Aiez38&s=10" width="110px" height="110px"> <div class="livebbtv-name">Star Vijay HD</div></div> </a> </div>
+     <div class="livebbtv-item" data-genre="star"> <a  href="https://hot-star.varun-iptv.repl.co/551.html"  > <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://static.wikia.nocookie.net/logopedia/images/6/65/Star_utsav.png" width="110px" height="110px"> <div class="livebbtv-name">Star Utsav</div></div> </a> </div>
+        
+    <div class="livebbtv-item" data-genre="epic"> <a  href="https://epic-on.varun-iptv.repl.co/ishara.html"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://www.epicon.in/img/ishara-logo.png" width="110px" height="100px"><div class="livebbtv-name"> Ishara</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="epic"> <a  href="https://epic-on.varun-iptv.repl.co/epic.html"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://www.epicon.in/img/epic-tv-new.png" width="110px" height="100px"><div class="livebbtv-name"> Epic</div></div> </a> </div>
+     <div class="livebbtv-item" data-genre="epic"> <a  href="https://epic-on.varun-iptv.repl.co/filamachi.html"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://www.epicon.in/img/new_filamchi_logo.png" width="110px" height="100px"><div class="livebbtv-name"> Filamachi</div></div> </a> </div>
+     <div class="livebbtv-item" data-genre="epic"> <a  href="https://epic-on.varun-iptv.repl.co/showbox.html"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://www.epicon.in/img/new-show-box-logo.png" width="110px" height="100px"><div class="livebbtv-name"> Showbox</div></div> </a> </div>
+     <div class="livebbtv-item" data-genre="epic"> <a  href="https://epic-on.varun-iptv.repl.co/gubbare.html"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://www.epicon.in/img/gubbare-logo.png" width="110px" height="100px"><div class="livebbtv-name">Gubbare</div></div> </a> </div>
+    <div class="livebbtv-item" data-genre="discovery"> <a  href="https://varun-iptv.netlify.app/m3u/discoverybengali.m3u8"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://hcil.umd.edu/wp-content/uploads/2015/12/Discovery-Channel-logo.png" width="110px" height="110px">
+        <div class="livebbtv-name">Discovery Bengali</div></div> </a> </div>
+        <div class="livebbtv-item" data-genre="discovery"> <a  href="https://varun-iptv.netlify.app/m3u/discoveryenglish.m3u8"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://hcil.umd.edu/wp-content/uploads/2015/12/Discovery-Channel-logo.png" width="110px" height="110px">
+        <div class="livebbtv-name">Discovery English</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="discovery"> <a  href="https://varun-iptv.netlify.app/m3u/discoveryhindi.m3u8"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://hcil.umd.edu/wp-content/uploads/2015/12/Discovery-Channel-logo.png" width="110px" height="110px">
+        <div class="livebbtv-name">Discovery Hindi</div></div> </a> </div>
+        
+        <div class="livebbtv-item" data-genre="discovery"> <a  href="https://varun-iptv.netlify.app/m3u/discoverykannada.m3u8"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://hcil.umd.edu/wp-content/uploads/2015/12/Discovery-Channel-logo.png" width="110px" height="110px">
+        <div class="livebbtv-name">Discovery Kannada</div></div> </a> </div>
+        <div class="livebbtv-item" data-genre="discovery"> <a  href="https://varun-iptv.netlify.app/m3u/discoverymalayalam.m3u8"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://hcil.umd.edu/wp-content/uploads/2015/12/Discovery-Channel-logo.png" width="110px" height="110px">
+        <div class="livebbtv-name">Discovery Malayalam</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="discovery"> <a  href="https://varun-iptv.netlify.app/m3u/discoverytamil.m3u8"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://hcil.umd.edu/wp-content/uploads/2015/12/Discovery-Channel-logo.png" width="110px" height="110px">
+        <div class="livebbtv-name">Discovery Tamil</div></div> </a> </div>
+        <div class="livebbtv-item" data-genre="discovery"> <a  href="https://varun-iptv.netlify.app/m3u/discoverytelugu.m3u8"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://hcil.umd.edu/wp-content/uploads/2015/12/Discovery-Channel-logo.png" width="110px" height="110px">
+        <div class="livebbtv-name">Discovery Telugu</div></div> </a> </div>
+  <div class="livebbtv-item" data-genre="discovery"> <a  href="https://varun-iptv.netlify.app/m3u/Animal_Planet.m3u8"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://ap2-prod-images.disco-api.com/2020/12/17/6bfada34-767b-4654-a6a2-526173c6da8c.png" width="110px" height="100px">
+        <div class="livebbtv-name">Animal planet</div></div> </a> </div>
+
+ <div class="livebbtv-item" data-genre="discovery"> <a  href="https://varun-iptv.netlify.app/m3u/Discovery_Science.m3u8"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://upload.wikimedia.org/wikipedia/en/f/f8/DiscoveryChannel%28India%29Logo.png" width="110px" height="100px">
+        <div class="livebbtv-name">Discovery Science</div></div> </a> </div>
+ 
+ <div class="livebbtv-item" data-genre="discovery"> <a  href="https://varun-iptv.netlify.app/m3u/TLC.m3u8"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://ap2-prod-images.disco-api.com/2020/12/16/644fb820-4583-4141-b251-bb2a70f2ca80.png" width="110px" height="110px">
+        <div class="livebbtv-name">TLC</div></div> </a> </div>
+        
+        <div class="livebbtv-item" data-genre="discovery"> <a  href="https://varun-iptv.netlify.app/m3u/Discovery_Turbo.m3u8"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://ap2-prod-images.disco-api.com/2020/12/16/8104e113-f6d2-46b2-85e2-c2c497eb8307.png"width="110px" height="110px">
+       <div class="livebbtv-name">Discovery Turbo</div></div> </a> </div>
+ 
+ <div class="livebbtv-item" data-genre="discovery"> <a  href="https://varun-iptv.netlify.app/m3u/Investigation_Discovery.m3u8"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Investigation_Discovery_Logo_2018.svg/1200px-Investigation_Discovery_Logo_2018.svg.png" width="110px" height="110px">
+        <div class="livebbtv-name">Investigation Discovery</div></div> </a> </div>
+ 
+ <div class="livebbtv-item" data-genre="discovery"> <a  href="https://varun-iptv.netlify.app/m3u/Eurosport.m3u8"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://ap2-prod-images.disco-api.com/2020/12/17/d187c23d-46da-4a59-8929-7534b7a01c0c.png" width="110px" height="110px">
+        <div class="livebbtv-name">Eurosport</div></div> </a> </div>
+ 
+ <div class="livebbtv-item" data-genre="discovery"> <a  href="https://varun-iptv.netlify.app/m3u/DMAX.m3u8"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://ap2-prod-images.disco-api.com/2020/12/16/a297d103-9ac7-4a10-8359-1e65abb625cc.png" width="110px" height="110px">
+        <div class="livebbtv-name">DMAX</div></div> </a> </div>
+ 
+ <div class="livebbtv-item" data-genre="discovery"> <a  href="https://varun-iptv.netlify.app/m3u/TRVL_Channel.m3u8"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://ap2-prod-images.disco-api.com/2020/12/05/967c038f-8703-4f64-9446-5a9032c86c87.png" width="110px" height="110px">
+        <div class="livebbtv-name">TRVL Channel</div></div> </a> </div>
+ 
+ <div class="livebbtv-item" data-genre="discovery"> <a  href="https://varun-iptv.netlify.app/m3u/HGTV.m3u8"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://upload.wikimedia.org/wikipedia/commons/a/a8/HGTV_2010.svg" width="110px" height="110px">
+        <div class="livebbtv-name">HGTV</div></div> </a> </div>
+ 
+ <div class="livebbtv-item" data-genre="discovery"> <a  href="https://varun-iptv.netlify.app/m3u/Food%20Network.m3u8"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Food_Network_Logo.svg/1200px-Food_Network_Logo.svg.png" width="110px" height="110px">
+        <div class="livebbtv-name">Food Network</div></div> </a> </div>
+ 
+ <div class="livebbtv-item" data-genre="discovery"> <a  href="https://varun-iptv.netlify.app/m3u/discoverykidshindi.m3u8"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/2016_Discovery_Kids_logo.svg/1200px-2016_Discovery_Kids_logo.svg.png" width="110px" height="110px">
+        <div class="livebbtv-name">Discovery Kids Hindi</div></div> </a> </div>
+        <div class="livebbtv-item" data-genre="discovery"> <a  href="https://varun-iptv.netlify.app/m3u/discoverykidskannada.m3u8"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/2016_Discovery_Kids_logo.svg/1200px-2016_Discovery_Kids_logo.svg.png" width="110px" height="110px">
+        <div class="livebbtv-name">Discovery Kids Kannada</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="discovery"> <a  href="https://varun-iptv.netlify.app/m3u/discoverykidsmalayalam.m3u8"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/2016_Discovery_Kids_logo.svg/1200px-2016_Discovery_Kids_logo.svg.png" width="110px" height="110px">
+        <div class="livebbtv-name">Discovery Kids Malayalam</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="discovery"> <a  href="https://varun-iptv.netlify.app/m3u/discoverykidstamil.m3u8"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/2016_Discovery_Kids_logo.svg/1200px-2016_Discovery_Kids_logo.svg.png" width="110px" height="110px">
+        <div class="livebbtv-name">Discovery Kids Tamil</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="discovery"> <a  href="https://varun-iptv.netlify.app/m3u/discoverykidstelugu.m3u8"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/2016_Discovery_Kids_logo.svg/1200px-2016_Discovery_Kids_logo.svg.png" width="110px" height="110px">
+        <div class="livebbtv-name">Discovery Kids Telugu</div></div> </a> </div>
+        
+    <div class="livebbtv-item" data-genre="sony">
+<a href="player.html?varun=https://dai.google.com/linear/hls/event/dBdwOiGaQvy0TA1zOsjV6w/master.m3u8">
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://images.slivcdn.com/videoasset_images/sethd_23oct_portrait_thumb_rev.jpg?h=494&amp;w=344&amp;t=c_fill&amp;q=low&amp;fr=webp" width="110px" height="100px">
+<div class="livebbtv-name">SONY SET HD</div></div> </a> </div>
+
+<div class="livebbtv-item" data-genre="sony">
+<a href="player.html?varun=https://dai.google.com/linear/hls/event/CrTivkDESWqwvUj3zFEYEA/master.m3u8">
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://images.slivcdn.com/videoasset_images/sony_sabhd_23oct_portrait_thumb.jpg?h=494&amp;w=344&amp;t=c_fill&amp;q=low&amp;fr=webp" width="110px" height="100px">
+<div class="livebbtv-name">SONY SAB HD</div></div> </a> </div>
+
+<div class="livebbtv-item" data-genre="sony">
+<a href="player.html?varun=https://dai.google.com/linear/hls/event/I2phC6tgTDuJngxw9gJgPw/master.m3u8">
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://images.slivcdn.com/videoasset_images/sony_marathi_23oct_portrait_thumb.jpg?h=494&amp;w=344&amp;t=c_fill&amp;q=low&amp;fr=webp" width="110px" height="100px">
+<div class="livebbtv-name">Sony Marathi</div></div> </a> </div>
+
+<div class="livebbtv-item" data-genre="sony">
+<a href="player.html?varun=https://dai.google.com/linear/hls/event/6bVWYIKGS0CIa-cOpZZJPQ/master.m3u8">
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://images.slivcdn.com/videoasset_images/sony_bbchd_23oct_portrait_thumb.jpg?h=494&amp;w=344&amp;t=c_fill&amp;q=low&amp;fr=webp" width="110px" height="100px">
+<div class="livebbtv-name">Sony BBC Earth HD</div></div> </a> </div>
+
+<div class="livebbtv-item" data-genre="sony">
+<a href="player.html?varun=https://dai.google.com/linear/hls/event/dhPrGRwDRvuMQtmlzppzQQ/master.m3u8">
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Pal.png" width="110px" height="100px">
+<div class="livebbtv-name">Sony PAL</div></div> </a> </div>
+
+<div class="livebbtv-item" data-genre="sony">
+<a href="player.html?varun=https://dai.google.com/linear/hls/event/j-YEIDwORxubtP_967VcZg/master.m3u8">
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://images.slivcdn.com/videoasset_images/sony_aath_23oct_portrait_thumb.jpg?h=494&amp;w=344&amp;t=c_fill&amp;q=low&amp;fr=webp" width="110px" height="100px">
+<div class="livebbtv-name">Sony Aath</div></div> </a> </div>
+
+<div class="livebbtv-item" data-genre="sony">
+<a href="player.html?varun=https://dai.google.com/linear/hls/event/UcjHNJmCQ1WRlGKlZm73QA/master.m3u8">
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://images.slivcdn.com/videoasset_images/sony_maxhd_23oct_portrait_thumb.jpg?h=494&amp;w=344&amp;t=c_fill&amp;q=low&amp;fr=webp" width="110px" height="100px">
+<div class="livebbtv-name">Sony MAX HD</div></div> </a> </div>
+
+<div class="livebbtv-item" data-genre="sony">
+<a href="player.html?varun=https://dai.google.com/linear/hls/event/gX5rCBf6Q7-D5AWY-sovzQ/master.m3u8">
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://images.slivcdn.com/videoasset_images/sony_wah_23oct_portrait_thumb.jpg?h=494&amp;w=344&amp;t=c_fill&amp;q=low&amp;fr=webp" width="110px" height="100px">
+<div class="livebbtv-name">Sony WAH</div></div> </a> </div>
+
+<div class="livebbtv-item" data-genre="sony">
+<a href="player.html?varun=https://dai.google.com/linear/hls/event/MdQ5Zy-PSraOccXu8jflCg/master.m3u8">
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://images.slivcdn.com/videoasset_images/sony_max2_23oct_portrait_thumb.jpg?h=494&amp;w=344&amp;t=c_fill&amp;q=low&amp;fr=webp" width="110px" height="100px">
+<div class="livebbtv-name">Sony MAX2</div></div> </a> </div>
+
+<div class="livebbtv-item" data-genre="sony">
+<a href="player.html?varun=https://dai.google.com/linear/hls/event/x7rXWd2ERZ2tvyQWPmO1HA/master.m3u8">
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://images.slivcdn.com/videoasset_images/sony_pixhd_23oct_portrait_thumb.jpg?h=494&w=344&t=c_fill&q=low&fr=webp" width="110px" height="100px">
+<div class="livebbtv-name">Sony PIX HD</div></div> </a> </div>
+
+<div class="livebbtv-item" data-genre="sony">
+<a href="player.html?varun=https://dai.google.com/linear/hls/event/Oc1isQAET3WaNPoABfScmg/master.m3u8">
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="http://jiotv.catchup.cdn.jio.com/dare_images/images/SET_MAX.png" width="110px" height="100px">
+<div class="livebbtv-name">Sony MAX</div></div> </a> </div>
+
+<div class="livebbtv-item" data-genre="sony">
+<a href="player.html?varun=https://dai.google.com/linear/hls/event/wG75n5U8RrOKiFzaWObXbA/master.m3u8">
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://images.slivcdn.com/portrait_thumb/Sony_TEN1HD_23oct_portrait_thumb.jpg?h=494&amp;w=344&amp;t=c_fill&amp;q=low&amp;fr=webp" width="110px" height="100px">
+<div class="livebbtv-name">Sony Ten 1 HD</div></div> </a> </div>
+
+<div class="livebbtv-item" data-genre="sony">
+<a href="player.html?varun=https://dai.google.com/linear/hls/event/V9h-iyOxRiGp41ppQScDSQ/master.m3u8">
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://origin-staticv2.sonyliv.com/circular_image/Sony_TEN2HD_23oct_circular_thumb.jpg" width="110px" height="100px">
+<div class="livebbtv-name">Sony Ten 2 HD</div></div> </a> </div>
+
+<div class="livebbtv-item" data-genre="sony">
+<a href="player.html?varun=https://dai.google.com/linear/hls/event/ltsCG7TBSCSDmyq0rQtvSA/master.m3u8">
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://origin-staticv2.sonyliv.com/circular_image/Sony_TEN3HD_23oct_circular_thumb.jpg" width="110px" height="100px">
+<div class="livebbtv-name">Sony Ten 3 HD</div></div> </a> </div>
+
+<div class="livebbtv-item" data-genre="sony">
+<a href="player.html?varun=https://pubads.g.doubleclick.net/ssai/event/tNzcW2ZhTVaViggo5ocI-A/master.m3u8">
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://images.slivcdn.com/portrait_thumb/Sony_TEN4HD_23oct_portrait_thumb.jpg?h=494&amp;w=344&amp;t=c_fill&amp;q=low&amp;fr=webp" width="110px" height="100px">
+<div class="livebbtv-name">Sony Ten 4 HD</div></div> </a> </div>
+
+<div class="livebbtv-item" data-genre="sony">
+<a href="player.html?varun=https://dai.google.com/linear/hls/event/Sle_TR8rQIuZHWzshEXYjQ/master.m3u8">
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://origin-staticv2.sonyliv.com/circular_image/Sony_TEN5HD_23oct_circular_thumb.jpg" width="110px" height="100px">
+<div class="livebbtv-name">Sony Ten 5 HD</div></div> </a> </div>
+
+<div class="livebbtv-item" data-genre="sony">
+<a href="player.html?varun=https://dai.google.com/linear/hls/event/6WhVNGKTRXyu588zZv1Lkg/master.m3u8">
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://origin-staticv2.sonyliv.com/circular_image/Sony_TEN1_23oct_circular_thumb.jpg" width="110px" height="100px">
+<div class="livebbtv-name">Sony Ten 1</div></div> </a> </div>
+
+<div class="livebbtv-item" data-genre="sony">
+<a href="player.html?varun=https://dai.google.com/linear/hls/event/LK-ik89MQIi_pWBbg74KNQ/master.m3u8">
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://origin-staticv2.sonyliv.com/circular_image/Sony_TEN2_23oct_circular_thumb.jpg" width="110px" height="100px">
+<div class="livebbtv-name">Sony Ten 2</div></div> </a> </div>
+
+<div class="livebbtv-item" data-genre="sony">
+<a href="player.html?varun=https://dai.google.com/linear/hls/event/BCOFZq1JQjq12fmaO6lAAA/master.m3u8">
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://origin-staticv2.sonyliv.com/circular_image/Sony_TEN3_23oct_circular_thumb.jpg" width="110px" height="100px">
+<div class="livebbtv-name">Sony Ten 3</div></div> </a> </div>
+
+<div class="livebbtv-item" data-genre="sony">
+<a href="player.html?varun=https://dai.google.com/linear/hls/event/smYybI_JToWaHzwoxSE9qA/master.m3u8">
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://origin-staticv2.sonyliv.com/circular_image/Sony_TEN4_23oct_circular_thumb.jpg" width="110px" height="100px">
+<div class="livebbtv-name">Sony Ten 4</div></div> </a> </div>
+
+<div class="livebbtv-item" data-genre="sony">
+<a href="player.html?varun=https://dai.google.com/linear/hls/event/r-eLp41YTHWTagvQSXFtAQ/master.m3u8">
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://origin-staticv2.sonyliv.com/circular_image/Sony_TEN5_23oct_circular_thumb.jpg" width="110px" height="100px">
+<div class="livebbtv-name">Sony Ten 5</div></div> </a> </div>
+
+<div class="livebbtv-item" data-genre="sony">
+<a href="player.html?varun=https://dai.google.com/linear/hls/event/GPY7RqOrSkmKJ8z1GbVNhg/master.m3u8">
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://images.slivcdn.com/videoasset_images/sony_yay_23oct_portrait_thumb.jpg?h=494&amp;w=344&amp;t=c_fill&amp;q=low&amp;fr=webp" width="110px" height="100px">
+<div class="livebbtv-name">Sony Yay</div></div> </a> </div>
+
+<div class="livebbtv-item" data-genre="sony">
+<a href="player.html?varun=https://spt-sonykal-1-us.lg.wurl.tv/playlist.m3u8">
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://upload.wikimedia.org/wikipedia/en/6/6e/Sony_Kal_Logo.jpeg" width="110px" height="100px">
+<div class="livebbtv-name">Sony Kal</div></div> </a> </div>
+      
+    <div class="livebbtv-item" data-genre="voot">
+<a href="http://vootliv.rf.gd/play/?id=144" >
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_HD.png""  width="110px" height="100px">
+
+<div class="livebbtv-name">ColorsHD</div>
+</div> </a> </div>
+<div class="livebbtv-item" data-genre="voot">
+<a href="http://vootliv.rf.gd/play/?id=1368" >
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_SD.png""  width="110px" height="100px">
+
+<div class="livebbtv-name">Colors</div>
+</div> </a> </div>
+<div class="livebbtv-item" data-genre="voot">
+<a href="http://vootliv.rf.gd/play/?id=1370" >
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Rishtey.png""  width="110px" height="100px">
+
+<div class="livebbtv-name">Rishtey</div>
+</div> </a> </div>
+<div class="livebbtv-item" data-genre="voot">
+<a href="http://vootliv.rf.gd/play/?id=756" >
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Bengali_HD.png""  width="110px" height="100px">
+
+<div class="livebbtv-name">ColorsBenglaHD</div>
+</div> </a> </div>
+<div class="livebbtv-item" data-genre="voot">
+<a href="http://vootliv.rf.gd/play/?id=1369" >
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Bangla_SD.png""  width="110px" height="100px">
+
+<div class="livebbtv-name">ColorsBangla</div>
+</div> </a> </div>
+<div class="livebbtv-item" data-genre="voot">
+<a href="http://vootliv.rf.gd/play/?id=757" >
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Kannada_HD.png""  width="110px" height="100px">
+
+<div class="livebbtv-name">ColorsKannadaHD</div>
+</div> </a> </div>
+<div class="livebbtv-item" data-genre="voot">
+<a href="http://vootliv.rf.gd/play/?id=1370" >
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Kannada_SD.png""  width="110px" height="100px">
+
+<div class="livebbtv-name">ColorsKannada</div>
+</div> </a> </div>
+<div class="livebbtv-item" data-genre="voot">
+<a href="http://vootliv.rf.gd/play/?id=755" >
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Marathi_HD.png""  width="110px" height="100px">
+
+<div class="livebbtv-name">ColorsMarathiHD</div>
+</div> </a> </div>
+<div class="livebbtv-item" data-genre="voot">
+<a href="http://vootliv.rf.gd/play/?id=1326" >
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Marathi_SD.png""  width="110px" height="100px">
+
+<div class="livebbtv-name">ColorsMarathi</div>
+</div> </a> </div>
+<div class="livebbtv-item" data-genre="voot">
+<a href="http://vootliv.rf.gd/play/?id=429" >
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Tamil_HD.png""  width="110px" height="100px">
+
+<div class="livebbtv-name">ColorsTamilHD</div>
+</div> </a> </div>
+<div class="livebbtv-item" data-genre="voot">
+<a href="http://vootliv.rf.gd/play/?id=402" >
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Tamil.png""  width="110px" height="100px">
+
+<div class="livebbtv-name">ColorsTamil</div>
+</div> </a> </div>
+<div class="livebbtv-item" data-genre="voot">
+<a href="http://vootliv.rf.gd/play/?id=196" >
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Gujarati.png""  width="110px" height="100px">
+
+<div class="livebbtv-name">ColorsGujarati</div>
+</div> </a> </div>
+<div class="livebbtv-item" data-genre="voot">
+<a href="http://vootliv.rf.gd/play/?id=198" >
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Oriya.png""  width="110px" height="100px">
+
+<div class="livebbtv-name">ColorsOriya</div>
+</div> </a> </div>
+<div class="livebbtv-item" data-genre="voot">
+<a href="http://vootliv.rf.gd/play/?id=1364" >
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlq9w31ncX4kqwZXGSw8GT1_ZIf3PMqTg7_A&usqp=CAU""  width="110px" height="100px">
+
+<div class="livebbtv-name">ComedyCentralHD</div>
+</div> </a> </div>
+<div class="livebbtv-item" data-genre="voot">
+<a href="http://vootliv.rf.gd/play/?id=1327" >
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCj-A1nCwvy0a1Voo12QRwJXh-zBC8RSCrUQ&usqp=CAU""  width="110px" height="100px">
+
+<div class="livebbtv-name">ComedyCentral</div>
+</div> </a> </div>
+<div class="livebbtv-item" data-genre="voot">
+<a href="http://vootliv.rf.gd/play/?id=1158" >
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Infinity_HD.png""  width="110px" height="100px">
+
+<div class="livebbtv-name">ColorsInfinityHD</div>
+</div> </a> </div>
+<div class="livebbtv-item" data-genre="voot">
+<a href="http://vootliv.rf.gd/play/?id=1325" >
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Infinity_SD.png""  width="110px" height="100px">
+
+<div class="livebbtv-name">ColorsInfinity</div>
+</div> </a> </div>
+<div class="livebbtv-item" data-genre="voot">
+<a href="http://vootliv.rf.gd/play/?id=1477" >
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Color_Cineplex_HD.png""  width="110px" height="100px">
+
+<div class="livebbtv-name">ColorsCineplexHD</div>
+</div> </a> </div>
+<div class="livebbtv-item" data-genre="voot">
+<a href="http://vootliv.rf.gd/play/?id=482" >
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Cineplex.png""  width="110px" height="100px">
+
+<div class="livebbtv-name">ColorsCineplex</div>
+</div> </a> </div>
+<div class="livebbtv-item" data-genre="voot">
+<a href="http://vootliv.rf.gd/play/?id=1450" >
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Rishtey_Cineplex.png""  width="110px" height="100px">
+
+<div class="livebbtv-name">RishteyCineplexSuperhit</div>
+</div> </a> </div>
+<div class="livebbtv-item" data-genre="voot">
+<a href="http://vootliv.rf.gd/play/?id=1763" >
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Cineplex_Bollywood.png""  width="110px" height="100px">
+
+<div class="livebbtv-name">ColorsCineplexBollywood</div>
+</div> </a> </div>
+<div class="livebbtv-item" data-genre="voot">
+<a href="http://vootliv.rf.gd/play/?id=785" >
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Super.png""  width="110px" height="100px">
+
+<div class="livebbtv-name">ColorsSuper</div>
+</div> </a> </div>
+<div class="livebbtv-item" data-genre="voot">
+<a href="http://vootliv.rf.gd/play/?id=1632" >
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Bangla_Cinema.png""  width="110px" height="100px">
+
+<div class="livebbtv-name">ColorsBanglaCinema</div>
+</div> </a> </div>
+<div class="livebbtv-item" data-genre="voot">
+<a href="http://vootliv.rf.gd/play/?id=1634" >
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Kannada_Cinema.png""  width="110px" height="100px">
+
+<div class="livebbtv-name">ColorsKannadaCinema</div>
+</div> </a> </div>
+<div class="livebbtv-item" data-genre="voot">
+<a href="http://vootliv.rf.gd/play/?id=1324" >
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Gujarati_Cinema.png""  width="110px" height="100px">
+
+<div class="livebbtv-name">ColorsGujaratiCinema</div>
+</div> </a> </div>
+<div class="livebbtv-item" data-genre="voot">
+<a href="http://vootliv.rf.gd/play/?id=1145" >
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="http://jiotv.catchup.cdn.jio.com/dare_images/images/MTV_HD_Plus.png""  width="110px" height="100px">
+
+<div class="livebbtv-name">MTVHDPlus</div>
+</div> </a> </div>
+<div class="livebbtv-item" data-genre="voot">
+<a href="http://vootliv.rf.gd/play/?id=248" >
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="http://jiotv.catchup.cdn.jio.com/dare_images/images/MTV.png""  width="110px" height="100px">
+
+<div class="livebbtv-name">MTV</div>
+</div> </a> </div>
+<div class="livebbtv-item" data-genre="voot">
+<a href="http://vootliv.rf.gd/play/?id=753" >
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="http://jiotv.catchup.cdn.jio.com/dare_images/images/MTV_Beats_HD.png""  width="110px" height="100px">
+
+<div class="livebbtv-name">MTVBeatsHD</div>
+</div> </a> </div>
+<div class="livebbtv-item" data-genre="voot">
+<a href="http://vootliv.rf.gd/play/?id=1378" >
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="http://jiotv.catchup.cdn.jio.com/dare_images/images/VH1.png""  width="110px" height="100px">
+
+<div class="livebbtv-name">VH1</div>
+</div> </a> </div>
+<div class="livebbtv-item" data-genre="voot">
+<a href="http://vootliv.rf.gd/play/?id=1400" >
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="http://jiotv.catchup.cdn.jio.com/dare_images/images/MTV_Beats_SD.png""  width="110px" height="100px">
+
+<div class="livebbtv-name">MTVBeats</div>
+</div> </a> </div>
+<div class="livebbtv-item" data-genre="voot">
+<a href="http://vootliv.rf.gd/play/?id=1402" >
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://upload.wikimedia.org/wikipedia/fr/3/39/Clubbing_TV.png""  width="110px" height="100px">
+
+<div class="livebbtv-name">ClubbingTV</div>
+</div> </a> </div>
+<div class="livebbtv-item" data-genre="voot">
+<a href="http://vootliv.rf.gd/play/?id=1226" >
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Nick_HD_Plus.png""  width="110px" height="100px">
+
+<div class="livebbtv-name">NickHD+</div>
+</div> </a> </div>
+<div class="livebbtv-item" data-genre="voot">
+<a href="http://vootliv.rf.gd/play/?id=545" >
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Nick_Hindi.png""  width="110px" height="100px">
+
+<div class="livebbtv-name">Nick</div>
+</div> </a> </div>
+<div class="livebbtv-item" data-genre="voot">
+<a href="http://vootliv.rf.gd/play/?id=544" >
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Nick_Junior.png""  width="110px" height="100px">
+
+<div class="livebbtv-name">NickJunior</div>
+</div> </a> </div>
+<div class="livebbtv-item" data-genre="voot">
+<a href="http://vootliv.rf.gd/play/?id=815" >
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="http://jiotv.catchup.cdn.jio.com/dare_images/images/sonic_Hindi.png""  width="110px" height="100px">
+
+<div class="livebbtv-name">Sonic</div>
+</div> </a> </div>
+<div class="livebbtv-item" data-genre="voot">
+<a href="http://vootliv.rf.gd/play/?id=1226" >
+<div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="http://jiotv.catchup.cdn.jio.com/dare_images/images/Sports18_1_HD.png""  width="110px" height="100px">
+
+<div class="livebbtv-name">SPORTS18HD</div>
+</div> </a> </div>
+
+<div class="livebbtv-item" data-genre="sun"> <a  href="https://nitro-x-methods.shop/NITRO-X-LIVETV/STREAM/?id=430"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://sund-images.sunnxt.com/38926/250x250_SunNews_38926_7f0072c1-9c14-4566-a81d-6c795df2124e.png" width="110px" height="100px">
+        <div class="livebbtv-name">Sun News</div></div> </a> </div>
+ 
+ <div class="livebbtv-item" data-genre="sun"> <a  href="https://nitro-x-methods.shop/NITRO-X-LIVETV/STREAM/?id=759"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://sund-images.sunnxt.com/75117/250x250_SunBangla_75117_9ed56450-7740-4169-bef1-1b3d4cfbf692.png" width="110px" height="100px">
+        <div class="livebbtv-name">Sun Bangla</div></div> </a> </div>
+        <div class="livebbtv-item" data-genre="sun"> <a  href="https://nitro-x-methods.shop/NITRO-X-LIVETV/STREAM/?id=230"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://sund-images.sunnxt.com/14020/300x300_9dd88de4-18ab-493b-98fe-6eb27e9cbf5e.jpg"width="110px" height="100px">
+       <div class="livebbtv-name">Sun TV HD</div></div> </a> </div>
+ 
+ <div class="livebbtv-item" data-genre="sun"> <a  href="https://nitro-x-methods.shop/NITRO-X-LIVETV/STREAM/?id=403"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://sund-images.sunnxt.com/26569/250x250_SunLife_26569_4b759496-79e6-4914-8c0e-976497182ac3.png" width="110px" height="100px">
+        <div class="livebbtv-name">Sun Life</div></div> </a> </div>
+ 
+ <div class="livebbtv-item" data-genre="sun"> <a  href="https://nitro-x-methods.shop/NITRO-X-LIVETV/STREAM/?id=279"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://sund-images.sunnxt.com/9025/250x250_SunMusic_9025_555eed5e-5937-4bd5-9dfd-5251e0fe5dc7.png" width="110px" height="100px">
+        <div class="livebbtv-name">Sun Music</div></div> </a> </div>
+ 
+ <div class="livebbtv-item" data-genre="sun"> <a  href="https://nitro-x-methods.shop/NITRO-X-LIVETV/STREAM/?id=353"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://sund-images.sunnxt.com/14019/250x250_GeminiTVHD_14019_65bc2d50-f266-4521-8fd5-38791f3272b4.png" width="110px" height="100px">
+        <div class="livebbtv-name">Gemini TV HD</div></div> </a> </div>
+ 
+ <div class="livebbtv-item" data-genre="sun"> 
+<a  href="https://nitro-x-methods.shop/NITRO-X-LIVETV/STREAM/?id=248"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://sund-images.sunnxt.com/26570/250x250_GeminiMoviesHD_26570_0ca1d1e8-f04d-41d0-943d-5e8948e271bc.png" width="110px" height="100px">
+        <div class="livebbtv-name">Gemini Movies HD</div></div> </a> </div>
+ 
+ <div class="livebbtv-item" data-genre="sun"> <a  href="https://nitro-x-methods.shop/NITRO-X-LIVETV/STREAM/?id=285"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://sund-images.sunnxt.com/26568/250x250_GeminiMusicHD_26568_2dc0c46d-afdf-407d-8862-3c2df67bee5b.png" width="110px" height="100px">
+        <div class="livebbtv-name">Gemini Music HD</div></div> </a> </div>
+ <div class="livebbtv-item" data-genre="sun"> <a  href="https://nitro-x-methods.shop/NITRO-X-LIVETV/STREAM/?id=402"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://sund-images.sunnxt.com/26572/250x250_GeminiLife_26572_797a9d8c-2ec2-4af8-b3dc-3b10c16c060d.png" width="110px" height="100px">
+        <div class="livebbtv-name">Gemini Life</div></div> </a> </div>
+        <div class="livebbtv-item" data-genre="sun"> <a  href="https://nitro-x-methods.shop/NITRO-X-LIVETV/STREAM/?id=355"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://sund-images.sunnxt.com/30846/250x250_UdayaTVHD_30846_25b8347b-f9bf-4d83-89d8-54f0a06b6dce.png" width="110px" height="100px">
+        <div class="livebbtv-name">Udaya TV HD </div></div> </a> </div>
+<div class="livebbtv-item" data-genre="sun"> <a  href="https://nitro-x-methods.shop/NITRO-X-LIVETV/STREAM/?id=287"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://sund-images.sunnxt.com/9022/250x250_UdayaMusic_9022_c88f50d2-6f39-4a9b-a177-d28f8ec6c105.png" width="110px" height="100px">
+        <div class="livebbtv-name">Udaya Music</div></div> </a> </div>
+ 
+ <div class="livebbtv-item" data-genre="sun"> <a  href="https://nitro-x-methods.shop/NITRO-X-LIVETV/STREAM/?id=246"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://sund-images.sunnxt.com/26576/250x250_UdayaMovies_26576_42386a71-5ce5-4577-986e-6bd85d38cc80.png" width="110px" height="100px">
+        <div class="livebbtv-name">Udaya Movies</div></div> </a> </div>
+ 
+ <div class="livebbtv-item" data-genre="sun"> <a  href="https://nitro-x-methods.shop/NITRO-X-LIVETV/STREAM/?id=392"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://sund-images.sunnxt.com/9014/250x250_UdayaComedy_9014_ed70cf76-db8f-4bdc-ae69-d1ba4ba0a9d3.png" width="110px" height="100px">
+        <div class="livebbtv-name">Udaya Comedy</div></div> </a> </div>
+ 
+ <div class="livebbtv-item" data-genre="sun"> <a  href="https://nitro-x-methods.shop/NITRO-X-LIVETV/STREAM/?id=354"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://sund-images.sunnxt.com/26574/250x250_SuryaTVHD_26574_01dc275d-8c77-418d-9c90-bc889ff5955d.png" width="110px" height="100px">
+        <div class="livebbtv-name">Surya TV HD</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="sun"> <a  href="https://nitro-x-methods.shop/NITRO-X-LIVETV/STREAM/?id=758"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://sund-images.sunnxt.com/30835/250x250_SuryaComedy_30835_5a19c085-3a9a-4c70-bede-4910dc49f372.png" width="110px" height="100px">
+        <div class="livebbtv-name">Surya Comedy</div></div> </a> </div>
+ 
+ <div class="livebbtv-item" data-genre="sun"> <a  href="https://nitro-x-methods.shop/NITRO-X-LIVETV/STREAM/?id=454"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://sund-images.sunnxt.com/26575/250x250_SuryaMusic_26575_a804f3fd-2ce7-4324-aa2e-8228f9dc9a3a.png" width="110px" height="100px">
+        <div class="livebbtv-name">Surya Music</div></div> </a> </div>
+ 
+ <div class="livebbtv-item" data-genre="sun"> <a  href="https://nitro-x-methods.shop/NITRO-X-LIVETV/STREAM/?id=761"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://sund-images.sunnxt.com/9019/250x250_SuryaMovies_9019_6dae8158-5e95-469f-b597-465c51bd2cc0.png" width="110px" height="100px">
+        <div class="livebbtv-name">Surya Movies</div></div> </a> </div>
+ 
+ <div class="livebbtv-item" data-genre="sun"> <a  href="https://nitro-x-methods.shop/NITRO-X-LIVETV/STREAM/?id=243"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://sund-images.sunnxt.com/32138/250x250_KTV_32138_0f1b941c-f9c9-4931-b13c-4deaaabbf843.png" width="110px" height="100px">
+        <div class="livebbtv-name">KTV</div></div> </a> </div>
+ 
+ <div class="livebbtv-item" data-genre="sun"> <a  href="https://nitro-x-methods.shop/NITRO-X-LIVETV/STREAM/?id=488"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://sund-images.sunnxt.com/26577/250x250_ChintuTV_26577_d9109d1a-0110-4c8f-8bc2-5dba4a758167.png" width="110px" height="100px">
+        <div class="livebbtv-name">Chintu TV</div></div> </a> </div>
+ 
+ <div class="livebbtv-item" data-genre="sun"> <a  href="https://nitro-x-methods.shop/NITRO-X-LIVETV/STREAM/?id=490"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://sund-images.sunnxt.com/26571/250x250_KushiTV_26571_ef287cac-6e6f-4cc7-96e1-b92160acb927.png" width="110px" height="100px">
+        <div class="livebbtv-name">Kushi TV</div></div> </a> </div>
+ 
+ <div class="livebbtv-item" data-genre="sun"> <a  href="https://nitro-x-methods.shop/NITRO-X-LIVETV/STREAM/?id=577"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://sund-images.sunnxt.com/26573/250x250_KochuTV_26573_9481a434-18ca-4780-a469-a205154eab64.png" width="110px" height="100px">
+        <div class="livebbtv-name">Kochu TV</div></div> </a> </div>
+ 
+ <div class="livebbtv-item" data-genre="sun"> <a  href="https://nitro-x-methods.shop/NITRO-X-LIVETV/STREAM/?id=487"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://sund-images.sunnxt.com/26567/250x250_ChuttiTV_26567_9e566862-4ddb-4fea-90b6-1710aa5116fe.png" width="110px" height="100px">
+        <div class="livebbtv-name">Chutti TV</div></div> </a> </div>
+ 
+ <div class="livebbtv-item" data-genre="sun"> <a  href="https://nitro-x-methods.shop/NITRO-X-LIVETV/STREAM/?id=377"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://sund-images.sunnxt.com/9023/250x250_AdithyaTV_9023_9ca552af-c71b-41c2-a9a7-c6597fe694cf.png" width="110px" height="100px">
+        <div class="livebbtv-name">Adithya TV</div></div> </a> </div>
+        
+        
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeecinemahd"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeecinemahd/channel_web/1170x658withlogo167952257 "  width="110px" height="100px"><div class="livebbtv-name">Zee cinema HD</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeecinemalu"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeecinemalu/channel_web/1170x6581642453232 "  width="110px" height="100px"><div class="livebbtv-name">Zee Cinemalu HD</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-tvpictureshd"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-tvpictureshd/channel_web/1170x658withlog1476130363 "  width="110px" height="100px"><div class="livebbtv-name">& Pictures HD</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeetalkies"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeetalkies/channel_web/1170x658483062857 "  width="110px" height="100px"><div class="livebbtv-name">Zee Talkies HD</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeeanmolcinema"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeeanmolcinema/channel_web/1170x658withlog_1721007595 "  width="110px" height="100px"><div class="livebbtv-name">Zee Anmol Cinema</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeeclassic"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeeclassic/channel_web/1170x658e6b59efbc9c5471f9392f477f91f0c11 "  width="110px" height="100px"><div class="livebbtv-name">Zee Classic</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeecinema"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeecinema/channel_web/1170x658withlogo_807278654 "  width="110px" height="100px"><div class="livebbtv-name">Zee Cinema</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-pictures"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-pictures/channel_web/1170x658withlog_1269578414 "  width="110px" height="100px"><div class="livebbtv-name">& Pictures</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeeaction"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeeaction/channel_web/1170x658withlog_1953200347 "  width="110px" height="100px"><div class="livebbtv-name">Zee Action</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-privéhd"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-privéhd/channel_web/1170x658withlogo375086496 "  width="110px" height="100px"><div class="livebbtv-name">& Prive HD</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-channel_2105335046"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-channel_2105335046/channel_web/1170x658379547401 "  width="110px" height="100px"><div class="livebbtv-name">& Flix HD</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-176"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-176/channel_web/1170x658d4d3573a17f24dcdb86c0da75e7208e8 "  width="110px" height="100px"><div class="livebbtv-name">Zee Classic</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-209"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-209/channel_web/1170x658withlogo358457080 "  width="110px" height="100px"><div class="livebbtv-name">&amp;xplorHD</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-216"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-216/channel_web/1170x658withlogo20909261 "  width="110px" height="100px"><div class="livebbtv-name">Zee Biskope</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-224"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-224/channel_web/1170x658withlogo_334138193 "  width="110px" height="100px"><div class="livebbtv-name">Zee Thirai</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-394"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-394/channel_web/1170x658717187404 "  width="110px" height="100px"><div class="livebbtv-name">Zee Chitramandir</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-aajtak"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-aajtak/channel_web/aajtak117075e453cde75a4fcbbd98b890266dcb21 "  width="110px" height="100px"><div class="livebbtv-name">Aaj Tak</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeenews"><div class="livebbtv -name"></div><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeenews/channel_web/zeenews117058a10e260ccf453885b0b866b6efcf8c "  width="110px" height="100px"><div class="livebbtv-name">Zee News</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-162"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-162/channel_web/anchorbanners11704f82e6a64233425f9ccc065f88214e34 "  width="110px" height="100px"><div class="livebbtv-name">Republic Bharat</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeebusiness"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeebusiness/channel_web/zeebusiness117088d767ebaf91485992201f5422d49bb1 "  width="110px" height="100px"><div class="livebbtv-name">Zee Business</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-170"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-170/channel_web/newsnation1170c28d164cac8b46d48dd03c24f22a2611 "  width="110px" height="100px"><div class="livebbtv-name">News Nation</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-257"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-257/channel_web/tv9marathi1170c5bded27d1644b18a5624c7dd3c33d3b "  width="110px" height="100px"><div class="livebbtv-name">TV9 Marathi</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-indiatoday"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-indiatoday/channel_web/indiatodayrajeevsardesdai117023f79b66b4d4466ea52534491c162c35 "  width="110px" height="100px"><div class="livebbtv-name">India Today</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-306"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-306/channel_web/vendhartv1170ea466f03c5984481876c4200bd6bb22d "  width="110px" height="100px"><div class="livebbtv-name">Vendhar TV</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-258"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-258/channel_web/tv9telugu117006600b0482a24377bec3b6b67e0b48c9 "  width="110px" height="100px"><div class="livebbtv-name">TV9 Telugu</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-222"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-222/channel_web/1170x658withlogo273514222953081f2a5264d2199171a94a0135187 "  width="110px" height="100px"><div class="livebbtv-name">TV5 News</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-270"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-270/channel_web/saamtv117064848316bfb4424ab360060c0214cec9 "  width="110px" height="100px"><div class="livebbtv-name">Saam TV</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-282"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-282/channel_web/indiatv1170598b3b1a8dde4800bcff6b4bc7ec02cc "  width="110px" height="100px"><div class="livebbtv-name">India TV</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeepunjabharyanahima"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeepunjabharyanahima/channel_web/zphh14405b673f1d0f8a43969c82a3c67dff3dad "  width="110px" height="100px"><div class="livebbtv-name">Zee Punjab & Haryanahima</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-251"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-251/channel_web/tv9bharatvarshb1170e3167ef254394aa0b6ff7a978bdbc921 "  width="110px" height="100px"><div class="livebbtv-name">TV9 Bharatvarsh</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-206"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-206/channel_web/e24newslogob1170d070a62b9582496dbaaf4a73a3430376 "  width="110px" height="100px"><div class="livebbtv-name">News24</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-channel_1422341819"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-channel_1422341819/channel_web/rtv11708043efd184cc497facd3cc4387cbb108 "  width="110px" height="100px"><div class="livebbtv-name">Republic TV</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-260"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-260/channel_web/tv9gujarati1170f3923ce988484dd0a81cd0bec994e377 "  width="110px" height="100px"><div class="livebbtv-name">TV9 Gujarati</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zee24kalak"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zee24kalak/channel_web/zee24kalak117026f0ebf7a57941d79fd9fdd74a2d6f26 "  width="110px" height="100px"><div class="livebbtv-name">Zee 24 Kalak</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-259"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-259/channel_web/tv9kannada1170035730f6801c4ba0b1d905a61bbc9dcd "  width="110px" height="100px"><div class="livebbtv-name">TV9 Kannada</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-201"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-201/channel_web/1170x658_503553443 "  width="110px" height="100px"><div class="livebbtv-name">Suvarna News</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zee24taas"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zee24taas/channel_web/zee24taas11707d845042f4ef453a8568b6ba22b3f568 "  width="110px" height="100px"><div class="livebbtv-name">Zee 24 Taas</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-255"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-255/channel_web/gnt11709b84a70ae43a4fcab837620b97c80f5f "  width="110px" height="100px"><div class="livebbtv-name">Good News Today</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-wion"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-wion/channel_web/wion117087793a1cce2d4dcaa4274d5bfc6d5a96 "  width="110px" height="100px"><div class="livebbtv-name">Wion</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeehindustan"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeehindustan/channel_web/zeehindustan11708e67b053f5e1461abb55377b1c939336 "  width="110px" height="100px"><div class="livebbtv-name">Zee Hindustan</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeebiharjharkhand"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeebiharjharkhand/channel_web/zeebiharjharkhandb117099e2787548354a5abd1c2230a5bee898 "  width="110px" height="100px"><div class="livebbtv-name">Zee Bihar & Jharkhand</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-171"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-171/channel_web/newsstateuttarpradeshuttrakhand117057fc4c96dc444886b421570253e13a6a "  width="110px" height="100px"><div class="livebbtv-name">News State Uttar Pradesh Uttrakhand</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-24ghantatv"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-24ghantatv/channel_web/anchorbanners117074b09be61e5a4f27b38cbbdc9527fc02 "  width="110px" height="100px"><div class="livebbtv-name">24 Ghanta TV</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeekalinganews"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeekalinganews/channel_web/zeeodisha11707ef6fbab0159428bbe1a3196370fa851 "  width="110px" height="100px"><div class="livebbtv-name">Zee Kalinga News</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeerajasthannews"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeerajasthannews/channel_web/zeerajasthanb1170751ba3f9900e44b9a49f06e4e37042db "  width="110px" height="100px"><div class="livebbtv-name">Zee Rajasthan News</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeemadhyapradeshchat"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeemadhyapradeshchat/channel_web/zeemadhyapradeshchhattisgarh1170342c565feaf141ccb6e5b39d2ce0e71d"><div class="livebbtv-name">Zee Madhyapradesh Chat</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-chardiklatimetvtimet"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-chardiklatimetvtimet/channel_web/chardiklatimetv1170803e29eda81041f481cabfbcf63c406a "  width="110px" height="100px"><div class="livebbtv-name">Chardikla Time TV Timel</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-ddnews"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-ddnews/channel_web/ddnews11705b93d38449604b94b8b715cef36f33c6 "  width="110px" height="100px"><div class="livebbtv-name">DD News</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-ddindia"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-ddindia/channel_web/ddindiab117082f1e0ff4e50404a97f9e4ea810d0d64 "  width="110px" height="100px"><div class="livebbtv-name">DD India</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-ddkisan"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-ddkisan/channel_web/ddkisan1170dd6893e0dd6d49c1aa725b8981c6ccdb "  width="110px" height="100px"><div class="livebbtv-name">DD Kisan</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeesalaam"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeesalaam/channel_web/zeesalaam1170007fc0a564444dd68d57bb1e95619dc2 "  width="110px" height="100px"><div class="livebbtv-name">Zee Salaam</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-ddyadagiri"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-ddyadagiri/channel_web/ddyadagiri1170fb5c4623571b43a5b0fc6a728e6d6aa0 "  width="110px" height="100px"><div class="livebbtv-name">DD Yadagiri</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-172"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-172/channel_web/newsstatempch11705453127ff9284c43b982e7e52d76641c "  width="110px" height="100px"><div class="livebbtv-name">Zee News Uttar Pradesh Uttrakhand</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-channel_265145625"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-channel_265145625/channel_web/zeeupukb1170a14076402a564513b88b488a90421d59 "  width="110px" height="100px"><div class="livebbtv-name">News State Madhya Pradesh Chhattisgarh</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-200"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-200/channel_web/pgsureshkumarne_1752938193 "  width="110px" height="100px"><div class="livebbtv-name">Asianet News</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-227"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-227/channel_web/tv5kannada1170aaeef9c71d264307ae6263b453520611 "  width="110px" height="100px"><div class="livebbtv-name">TV5 Kannada</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-273"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-273/channel_web/newsx11705f1b6520fc254daebac5828ac093b798 "  width="110px" height="100px"><div class="livebbtv-name">News X</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-274"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-274/channel_web/indianewspunjabhimachal1170c83368ea85274c9984dfbb31a8d9619b "  width="110px" height="100px"><div class="livebbtv-name">India News Punjabi Himachal</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-275"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-275/channel_web/indianewsupuk1170699189b29da0419780b604b5b27a1d5e "  width="110px" height="100px"><div class="livebbtv-name">India News UP</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-276"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-276/channel_web/indianewsrajasthan11709eea0d2513e04c16b39ed265596df0e5 "  width="110px" height="100px"><div class="livebbtv-name">India News Rajasthan</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-277"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-277/channel_web/indianewsmp1170cb5cf71c7f1141f8be18c083970cf4ed "  width="110px" height="100px"><div class="livebbtv-name">India News MP</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-278"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-278/channel_web/indianewsharyana11708fc221c14dcb40e389b3d9e1338a6c6c "  width="110px" height="100px"><div class="livebbtv-name">India News Haryana</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-279"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-279/channel_web/indianewsgujarat1170d81d0752eea04c669df2dc37c1bd4f97 "  width="110px" height="100px"><div class="livebbtv-name">India News Gujarat</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-280"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-280/channel_web/nenews1170b76941073dff4b9382b14f80198b5105 "  width="110px" height="100px"><div class="livebbtv-name">NE News</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-305"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-305/channel_web/livingindia1170df15a8430ba5461880eaec89eb8d05ef "  width="110px" height="100px"><div class="livebbtv-name">Living India</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-310"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-310/channel_web/pragnews11708e8cfbbd7cc342c09e27956a56a6084a "  width="110px" height="100px"><div class="livebbtv-name">Prag News</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-313"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-313/channel_web/sadhnaplusnews117044705e58ca9749d08603adeec06c299d "  width="110px" height="100px"><div class="livebbtv-name">Sadhna Plus News</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-314"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-314/channel_web/vipnews1170a39a47a1b0554f04ae96edb65b77d0fe "  width="110px" height="100px"><div class="livebbtv-name">VIP News</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-317"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-317/channel_web/time81170bcb518bfbd19440b8b482cad67ca7a8f "  width="110px" height="100px"><div class="livebbtv-name">TIME8</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-319"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-319/channel_web/sadhnanewsmpch11700de2a8f50653478c8a26b11904e279cc "  width="110px" height="100px"><div class="livebbtv-name">Sadhna News MP/CG</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-354"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-354/channel_web/bharatsamachar1170db49df94773d486194cba05b2d712ffe "  width="110px" height="100px"><div class="livebbtv-name">Bharat Samachar</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-355"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-355/channel_web/abnandhrajyothy11700427e7d0f53343ca8612a9caa4ed1edd "  width="110px" height="100px"><div class="livebbtv-name">ABN Andhra Jyothy<</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-371"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-371/channel_web/10tv1170867ca01f83cd44a4b4e2c577590039f0 "  width="110px" height="100px"><div class="livebbtv-name">10TV</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-378"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-378/channel_web/tv9bangla11701498fb25d3fd4b4db18c5d4e05e83cc9ce "  width="110px" height="100px"><div class="livebbtv-name">TV9 Bangla</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-383"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-383/channel_web/sudarshantv1170ab2c3555bfa44317922f02d2bdea03de "  width="110px" height="100px"><div class="livebbtv-name">Sudarshan TV</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-384"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-384/channel_web/dainiksavera1170fba0f7f5e89c488c893f6b80a54603d6 "  width="110px" height="100px"><div class="livebbtv-name">Dainik Savera</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-385"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-385/channel_web/cnewsbharat1170058694df1b4b4b3eac921b188dff69f6 "  width="110px" height="100px"><div class="livebbtv-name">C News Bharat</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-386"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-386/channel_web/tv1001170ab5260f9aca74e2590f119c364bbf435 "  width="110px" height="100px"><div class="livebbtv-name">TV 100</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-387"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-387/channel_web/abstarnews11702861f1381130457292da3bde6f1bf2fc "  width="110px" height="100px"><div class="livebbtv-name">AB Star News</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-388"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-388/channel_web/sanjhisoch11708b74fd15cc674b69aa715814bb0f7a0f "  width="110px" height="100px"><div class="livebbtv-name">Sanjhi Soch</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-389"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-389/channel_web/euronewsb117009692741d8254698a3a35f9cef914b2e "  width="110px" height="100px"><div class="livebbtv-name">Euro News</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-390"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-390/channel_web/africanewsb11702dce80531da94a959cf9be397d4f8469 "  width="110px" height="100px"><div class="livebbtv-name">Africa News</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-398"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-398/channel_web/abpnewssumitawasthi21170ef3a0d5743ed479aab0111e2440ca87b "  width="110px" height="100px"><div class="livebbtv-name">ABP News</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-399"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-399/channel_web/abpganga1170e69c33f8e6d140fd8cd954177064b16b "  width="110px" height="100px"><div class="livebbtv-name">ABP Ganga</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-400"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-400/channel_web/abpmajha1170cb8e2b94f9244846a3be5bdaa87792f8 "  width="110px" height="100px"><div class="livebbtv-name">ABP Majha</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-402"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-402/channel_web/abpananda1170326ed9e75816a6456b9e713f1f5bf83cc7 "  width="110px" height="100px"><div class="livebbtv-name">ABP Ananda</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-403"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-403/channel_web/abpasmita1170e9877d844ae74d54910d4a1798720913 "  width="110px" height="100px"><div class="livebbtv-name">ABP Asmita</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-404"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-404/channel_web/abpsanjha1170e043143edf5f4fa3be291347ddd15311 "  width="110px" height="100px"><div class="livebbtv-name">ABP Sanjha</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-407"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-407/channel_web/1170x658671581899 "  width="110px" height="100px"><div class="livebbtv-name">News Time Assam</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-408"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-408/channel_web/nd2411700106e77550ed4c70a5e578db7644f6a1 "  width="110px" height="100px"><div class="livebbtv-name">ND24</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-410"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-410/channel_web/cvrnewstelugu117089dc3accd5114448a6db45530a8be68d "  width="110px" height="100px"><div class="livebbtv-name">CVR News Telugu</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-411"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-411/channel_web/cvrenglish11702e7a7b9730fb46c2ba5c37f06bcb3d22 "  width="110px" height="100px"><div class="livebbtv-name">CVR English</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-413"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-413/channel_web/pratidintime1170afea806003d0418ab560e90ae675fb41 "  width="110px" height="100px"><div class="livebbtv-name">Pratidin Time</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-417"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-417/channel_web/news1india117021bcedcc55e34d259ffce7b35189a0a3 "  width="110px" height="100px"><div class="livebbtv-name">News1 India</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-418"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-418/channel_web/v611706da0a50feba64da09d710bfc70714d88 "  width="110px" height="100px"><div class="livebbtv-name">V6</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-423"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-423/channel_web/1170x658_1426309917 "  width="110px" height="100px"><div class="livebbtv-name">Newsmax</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-424"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-424/channel_web/1170x658439820624 "  width="110px" height="100px"><div class="livebbtv-name">Ticker News</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-430"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-430/channel_web/sarath_1170 "  width="110px" height="100px"><div class="livebbtv-name">Kairali News</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-431"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-431/channel_web/rbangla1170 "  width="110px" height="100px"><div class="livebbtv-name">Republic Bangla</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-9z583386"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-9z583386/channel_web/timesnownavbharat1170e4f4cbfa707b40e19ca7748eb6b27449 "  width="110px" height="100px"><div class="livebbtv-name">Times Now Navbharat</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-9z583533"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-9z583533/channel_web/1170x65872e20eebb8c4416db5d5b1e014e2ab77 "  width="110px" height="100px"><div class="livebbtv-name">ZEE News Tamil</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-9z583537"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-9z583537/channel_web/1170x65892ecf4aa8e934cdeb7deb9bbd501646d "  width="110px" height="100px"><div class="livebbtv-name">ZEE News Kannada</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-9z583538"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-9z583538/channel_web/1170x658fb1bd397310743bf850648fb036ae8b7 "  width="110px" height="100px"><div class="livebbtv-name">Zee News Telugu</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-9z583539"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-9z583539/channel_web/1170x658f0313dbfc3ef4c0c9c4619454829b2d3 "  width="110px" height="100px"><div class="livebbtv-name">ZEE News Malayalam</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-bigmagic_1786965389"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-bigmagic_1786965389/channel_web/1170x658withlog_2022520414 "  width="110px" height="100px"><div class="livebbtv-name">Big Magic</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeetvhd"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeetvhd/channel_web/1170x658withlog1554775145 "  width="110px" height="100px"><div class="livebbtv-name">Zee TV HD</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-tvhd_0"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-tvhd_0/channel_web/1170x658withlogo378606665 "  width="110px" height="100px"><div class="livebbtv-name">&amp;TV HD</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeemarathi"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeemarathi/channel_web/1170x658withlogo551054149 "  width="110px" height="100px"><div class="livebbtv-name">Zee Marathi HD</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeeyuva"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeeyuva/channel_web/1170x658withlogo_361849131 "  width="110px" height="100px"><div class="livebbtv-name">Zee Yuva</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeecafehd"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeecafehd/channel_web/1170x658withlogo325698699 "  width="110px" height="100px"><div class="livebbtv-name">Zee Café HD</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-bigganga"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-bigganga/channel_web/1170x6581735687172 "  width="110px" height="100px"><div class="livebbtv-name">Zee Ganga</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeetamil"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeetamil/channel_web/1170x6581250786368 "  width="110px" height="100px"><div class="livebbtv-name">Zee Tamil HD</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeetelugu"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeetelugu/channel_web/1170x658593933473 "  width="110px" height="100px"><div class="livebbtv-name">Zee Telugu HD</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeekannada"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeekannada/channel_web/1170x658611455469 "  width="110px" height="100px"><div class="livebbtv-name">Zee Kannada HD</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-129"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-129/channel_web/1170x658withlogo268830785 "  width="110px" height="100px"><div class="livebbtv-name">Zee Keralam HD</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeebangla"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeebangla/channel_web/1170x658310781121 "  width="110px" height="100px"><div class="livebbtv-name">Zee Bangla HD</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeeanmol"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeeanmol/channel_web/1170x658withlog_1844143347 "  width="110px" height="100px"><div class="livebbtv-name">Zee Anmol</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeebanglacinema"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeebanglacinema/channel_web/1170x658withlog1238879598 "  width="110px" height="100px"><div class="livebbtv-name">Zee Bangla Cinema</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-215"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-215/channel_web/1170x658withlog1031170304 "  width="110px" height="100px"><div class="livebbtv-name">Zee Punjabi</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-ddodia"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-ddodia/channel_web/1170x658withlog_1372768736 "  width="110px" height="100px"><div class="livebbtv-name">DD Odia</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-165"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-165/channel_web/1170x658withlog_1849594732 "  width="110px" height="100px"><div class="livebbtv-name">Boogle Bollywood</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-channel_2132977507"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-channel_2132977507/channel_web/1170x658withlog1071598760 "  width="110px" height="100px"><div class="livebbtv-name">Alpha ETC Punjabi</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeetv"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeetv/channel_web/1170x658withlogo_200095097 "  width="110px" height="100px"><div class="livebbtv-name">Zee TV</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-makkaltv"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-makkaltv/channel_web/1170x658withlogo_579936187 "  width="110px" height="100px"><div class="livebbtv-name">Makkal TV</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-ddpodhigai"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-ddpodhigai/channel_web/1170x658withlog_1550486077 "  width="110px" height="100px"><div class="livebbtv-name">DD Podhigai</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-ddmalayalam"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-ddmalayalam/channel_web/1170x658withlog_1300475155 "  width="110px" height="100px"><div class="livebbtv-name">DD Malayalam</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-ddbangla"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-ddbangla/channel_web/1170x658withlog_1242891543 "  width="110px" height="100px"><div class="livebbtv-name">DD Bangla</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-ddchandana"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-ddchandana/channel_web/1170x658withlogo_222569298 "  width="110px" height="100px"><div class="livebbtv-name">DD Chandana</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-sarthaktv"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-sarthaktv/channel_web/1170x658withlog1150431941 "  width="110px" height="100px"><div class="livebbtv-name">Zee Sarthak</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-ddsahyadri"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-ddsahyadri/channel_web/1170x658withlog1078376781 "  width="110px" height="100px"><div class="livebbtv-name">DD Sahyadri</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-ddgirnar"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-ddgirnar/channel_web/1170x658withlog_1445842484 "  width="110px" height="100px"><div class="livebbtv-name">DD Girnar</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-ddurdu"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-ddurdu/channel_web/1170x658withlog_1440959247 "  width="110px" height="100px"><div class="livebbtv-name">DD Urdu</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-ddrajasthanjaipur"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-ddrajasthanjaipur/channel_web/1170x658withlog_1491909175 "  width="110px" height="100px"><div class="livebbtv-name">DD Rajasthan</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-ddbharati"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-ddbharati/channel_web/1170x658withlog_1749264623 "  width="110px" height="100px"><div class="livebbtv-name">DD Bharati</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-ddmadhyapradesh"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-ddmadhyapradesh/channel_web/1170x658withlog_1218231157 "  width="110px" height="100px"><div class="livebbtv-name">DD Madhya Pradesh</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-ddbihar"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-ddbihar/channel_web/1170x658withlog_1865440648 "  width="110px" height="100px"><div class="livebbtv-name">DD Bihar</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-dduttarpradesh"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-dduttarpradesh/channel_web/1170x658withlog_1445486903 "  width="110px" height="100px"><div class="livebbtv-name">DD Uttar Pradesh</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee"> <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-ddpunjabi"><div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-ddpunjabi/channel_web/1170x658withlog_1007647800 "  width="110px" height="100px"><div class="livebbtv-name">DD Punjabi</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-241"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-241/channel_web/1170x658withlog_1692640342 "  width="110px" height="100px"><div class="livebbtv-name">Zee Picchar</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-250"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-250/channel_web/1170x658withlogo436360213 "  width="110px" height="100px"><div class="livebbtv-name">DD National HD</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-322"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-322/channel_web/1170x658withlog_1602476580 "  width="110px" height="100px"><div class="livebbtv-name">Rengoni</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-24ghantatv"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-24ghantatv/channel_web/1170x658withlogo_644392845 "  width="110px" height="100px"><div class="livebbtv-name">24 Ghanta</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeebangla"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeebangla/channel_web/1170x658_310781121 "  width="110px" height="100px"><div class="livebbtv-name">Zee Bangla HD</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeebanglacinema"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeebanglacinema/channel_web/1170x658withlog_1238879598 "  width="110px" height="100px"><div class="livebbtv-name">Zee Bangla Cinema</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-channel_1144658965"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-channel_1144658965/channel_web/1170x658withlog_1152304152 "  width="110px" height="100px"><div class="livebbtv-name">Sanskar TV</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-327"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-327/channel_web/1170x658withlog_2031259137 "  width="110px" height="100px"><div class="livebbtv-name">Shubh TV</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-channel_1565694979"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-channel_1565694979/channel_web/1170x658withlogo_66703857 "  width="110px" height="100px"><div class="livebbtv-name">Satsang TV</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-divyatv"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-divyatv/channel_web/1170x658withlog_2128007300 "  width="110px" height="100px"><div class="livebbtv-name">Divya TV</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-166"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-166/channel_web/1170x658withlogo_450865576 "  width="110px" height="100px"><div class="livebbtv-name">Krishna Vani</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-183"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-183/channel_web/1170x658withlog_1124442022 "  width="110px" height="100px"><div class="livebbtv-name">Hare Krsna</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-284"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-284/channel_web/1170x658withlogo_844800250 "  width="110px" height="100px"><div class="livebbtv-name">Sadhna TV</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-285"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-285/channel_web/1170x658withlog_1126976137 "  width="110px" height="100px"><div class="livebbtv-name">Ishwar  TV</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-316"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-316/channel_web/1170x658withlog_1836335736 "  width="110px" height="100px"><div class="livebbtv-name">Awakening</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-345"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-345/channel_web/1170x658withlogo_361016754 "  width="110px" height="100px"><div class="livebbtv-name">Ek Onkar</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-412"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-412/channel_web/1170x658_1626283630 "  width="110px" height="100px"><div class="livebbtv-name">Devam</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-wion"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-wion/channel_web/wionpalkisharmaupadhyay "  width="110px" height="100px"><div class="livebbtv-name">WION</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-273"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-273/channel_web/1170x658withlog_2139188797 "  width="110px" height="100px"><div class="livebbtv-name">News X</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-389"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-389/channel_web/1170x658_1189289223 "  width="110px" height="100px"><div class="livebbtv-name">Euro News</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-170"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-170/channel_web/1170x658withlog_2090292605 "  width="110px" height="100px"><div class="livebbtv-name">News Nation</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-171"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-171/channel_web/1170x658withlogo_217868396 "  width="110px" height="100px"><div class="livebbtv-name">News State Uttar Pradesh Uttrakhand</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-172"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-172/channel_web/1170x658withlog_1325098382 "  width="110px" height="100px"><div class="livebbtv-name">News State Madhya Pradesh Chhattisgarh</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-260"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-260/channel_web/1170x658withlog_1673213675 "  width="110px" height="100px"><div class="livebbtv-name">TV9 Gujarati</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zee24kalak"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zee24kalak/channel_web/1170x658withlog_1335796285 "  width="110px" height="100px"><div class="livebbtv-name">Zee 24 Kalak</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-163"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-163/channel_web/1170x658withlogo_382762389 "  width="110px" height="100px"><div class="livebbtv-name">Shiksha TV</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-ddgirnar"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-ddgirnar/channel_web/1170x658withlog_1445842484 "  width="110px" height="100px"><div class="livebbtv-name">DD Girnar</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeecinemahd"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeecinemahd/channel_web/1170x658withlogo_167952257 "  width="110px" height="100px"><div class="livebbtv-name">Zee Cinema HD</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-tvpictureshd"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-tvpictureshd/channel_web/1170x658withlog_1476130363 "  width="110px" height="100px"><div class="livebbtv-name">&amp;Pictures HD</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeeanmolcinema"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeeanmolcinema/channel_web/1170x658withlog_1721007595 "  width="110px" height="100px"><div class="livebbtv-name">Zee Anmol Cinema</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeeclassic"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeeclassic/channel_web/1170x658withlogo_218202605 "  width="110px" height="100px"><div class="livebbtv-name">Zee Bollywood</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeecinema"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeecinema/channel_web/1170x658withlogo_807278654 "  width="110px" height="100px"><div class="livebbtv-name">Zee Cinema</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-pictures"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-pictures/channel_web/1170x658withlog_1269578414 "  width="110px" height="100px"><div class="livebbtv-name">&amp;Pictures</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeeaction"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeeaction/channel_web/1170x658withlog_1953200347 "  width="110px" height="100px"><div class="livebbtv-name">Zee Action</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-176"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-176/channel_web/1170x658withlogo_673971588 "  width="110px" height="100px"><div class="livebbtv-name">Zee Classic</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-170"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-170/channel_web/1170x658withlog_2090292605 "  width="110px" height="100px"><div class="livebbtv-name">News Nation</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-171"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-171/channel_web/1170x658withlogo_217868396 "  width="110px" height="100px"><div class="livebbtv-name">News State Uttar Pradesh Uttrakhand</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-172"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-172/channel_web/1170x658withlog_1325098382 "  width="110px" height="100px"><div class="livebbtv-name">News State Madhya Pradesh Chhattisgarh</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-163"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-163/channel_web/1170x658withlogo_382762389 "  width="110px" height="100px"><div class="livebbtv-name">Shiksha TV</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-259"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-259/channel_web/1170x658withlogo_382506495 "  width="110px" height="100px"><div class="livebbtv-name">TV9 Kannada</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-201"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-201/channel_web/1170x658withlog_1629853975 "  width="110px" height="100px"><div class="livebbtv-name">Suvarna News</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeekannada"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeekannada/channel_web/1170x658_611455469 "  width="110px" height="100px"><div class="livebbtv-name">Zee Kannada HD</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-ddchandana"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-ddchandana/channel_web/1170x658withlogo_222569298 "  width="110px" height="100px"><div class="livebbtv-name">DD Chandana</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-227"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-227/channel_web/1170x658_1957432816 "  width="110px" height="100px"><div class="livebbtv-name">TV5 Kannada</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-241"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-241/channel_web/1170x658withlog_1692640342 "  width="110px" height="100px"><div class="livebbtv-name">Zee Picchar</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-356"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-356/channel_web/1170x658withlog_1495734600 "  width="110px" height="100px"><div class="livebbtv-name">News First</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-377"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-377/channel_web/1170x658withlog_1939892250 "  width="110px" height="100px"><div class="livebbtv-name">BTV</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-207"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-207/channel_web/09207e24_list "  width="110px" height="100px"><div class="livebbtv-name">E24</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-348"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-348/channel_web/1170x658withlog2096037619 "  width="110px" height="100px"><div class="livebbtv-name">Zee Zest HD</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-271"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-271/channel_web/1170x658withlog_1625066572 "  width="110px" height="100px"><div class="livebbtv-name">Sugran TV</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-392"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-392/channel_web/1170x658_11759167 "  width="110px" height="100px"><div class="livebbtv-name">Fashion TV Mumbai</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-393"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-393/channel_web/1170x6581715566364 "  width="110px" height="100px"><div class="livebbtv-name">Fashion TV Paris</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-129"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-129/channel_web/1170x658withlogo_268830785 "  width="110px" height="100px"><div class="livebbtv-name">Zee Keralam HD</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-ddmalayalam"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-ddmalayalam/channel_web/1170x658withlog_1300475155 "  width="110px" height="100px"><div class="livebbtv-name">DD Malayalam</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-257"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-257/channel_web/1170x658withlog_1579827656 "  width="110px" height="100px"><div class="livebbtv-name">TV9 Marathi</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-270"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-270/channel_web/1170x658withlogo_688844399 "  width="110px" height="100px"><div class="livebbtv-name">Saam TV</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeemarathi"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeemarathi/channel_web/1170x658withlogo_551054149 "  width="110px" height="100px"><div class="livebbtv-name">Zee Marathi HD</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeeyuva"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeeyuva/channel_web/1170x658withlogo_361849131 "  width="110px" height="100px"><div class="livebbtv-name">Zee Yuva</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeetalkies"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeetalkies/channel_web/1170x658_483062857 "  width="110px" height="100px"><div class="livebbtv-name">Zee Talkies HD</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-134"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-134/channel_web/1170x658withlog_1510286564 "  width="110px" height="100px"><div class="livebbtv-name">9X Jhakaas</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-ddsahyadri"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-ddsahyadri/channel_web/1170x658withlog_1078376781 "  width="110px" height="100px"><div class="livebbtv-name">DD Sahyadri</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-271"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-271/channel_web/1170x658withlog_1625066572 "  width="110px" height="100px"><div class="livebbtv-name">Sugran TV</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-353"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-353/channel_web/1170x658withlog_1434429781 "  width="110px" height="100px"><div class="livebbtv-name">Zee Vajwa</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zing"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zing/channel_web/1170x658withlogo895666865 "  width="110px" height="100px"><div class="livebbtv-name">Zing</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-165"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-165/channel_web/1170x658withlog_1849594732 "  width="110px" height="100px"><div class="livebbtv-name">Boogle Bollywood</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-296"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-296/channel_web/1170x658_419268810 "  width="110px" height="100px"><div class="livebbtv-name">Non-stop EDM</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-353"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-353/channel_web/1170x658withlog1434429781 "  width="110px" height="100px"><div class="livebbtv-name">Zee Vajwa</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeekalinganews"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeekalinganews/channel_web/1170x658withlog_1893514287 "  width="110px" height="100px"><div class="livebbtv-name">Zee Kalinga News</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-ddodia"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-ddodia/channel_web/1170x658withlog_1372768736 "  width="110px" height="100px"><div class="livebbtv-name">DD Odia</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeepunjabharyanahima"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeepunjabharyanahima/channel_web/1170x658withlog_1111951312 "  width="110px" height="100px"><div class="livebbtv-name">Zee Punjab & Haryanahima</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-215"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-215/channel_web/1170x658withlog_1031170304 "  width="110px" height="100px"><div class="livebbtv-name">Zee Punjabi</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-chardiklatimetvtimet"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-chardiklatimetvtimet/channel_web/1170x658withlog_1413076946 "  width="110px" height="100px"><div class="livebbtv-name">Chardikla Time TV</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-132"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-132/channel_web/1170x658withlogo_790675165 "  width="110px" height="100px"><div class="livebbtv-name">9X Tashan</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-channel_2132977507"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-channel_2132977507/channel_web/1170x658withlog_1071598760 "  width="110px" height="100px"><div class="livebbtv-name">Alpha ETC Punjabi</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-ddpunjabi"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-ddpunjabi/channel_web/1170x658withlog_1007647800 "  width="110px" height="100px"><div class="livebbtv-name">DD Punjabi</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-274"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-274/channel_web/1170x658withlogo_212610744 "  width="110px" height="100px"><div class="livebbtv-name">India News Punjabi Himachal</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-305"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-305/channel_web/1170x658withlogo_941446093 "  width="110px" height="100px"><div class="livebbtv-name">Living India</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-384"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-384/channel_web/1170x658_1283511414 "  width="110px" height="100px"><div class="livebbtv-name">Dainik Savera</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-388"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-388/channel_web/1170x658_290485787 "  width="110px" height="100px"><div class="livebbtv-name">Sanjhi Soch</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-306"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-306/channel_web/1170x658withlog_1787137922 "  width="110px" height="100px"><div class="livebbtv-name">Vendhar TV</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeetamil"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeetamil/channel_web/1170x658_1250786368 "  width="110px" height="100px"><div class="livebbtv-name">Zee Tamil HD</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-makkaltv"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-makkaltv/channel_web/1170x658withlogo_579936187"  width="110px" height="100px"><div class="livebbtv-name">Makkal TV</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-ddpodhigai"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-ddpodhigai/channel_web/1170x658withlog_1550486077" "  width="110px" height="100px"><div class="livebbtv-name">DD Podhigai</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-258"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-258/channel_web/1170x658withlogo_100879400"  width="110px" height="100px"><div class="livebbtv-name">TV9 Telugu</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeetelugu"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeetelugu/channel_web/1170x658_593933473" width="110px" height="100px"><div class="livebbtv-name">Zee Telugu HD</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-zeecinemalu"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeecinemalu/channel_web/1170x658_1642453232" "  width="110px" height="100px"><div class="livebbtv-name">Zee Cinemalu HD</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-355"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-355/channel_web/1170x658withlogo_719952414" width="110px" height="100px"><div class="livebbtv-name">ABN Andhra Jyothy</div></div> </a> </div>
+<div class="livebbtv-item" data-genre="zee">   <a  href="https://varun-iptv-live.000webhostapp.com/playzee.php?c=0-9-371"> <div class="livebbtv-thumb" style=" bottom: 0px; "><img class="loading" src="https://akamaividz2.zee5.com/image/upload/resources/0-9-371/channel_web/1170x658withlogo_203787503"  width="110px" height="100px"><div class="livebbtv-name">10TV News</div></div> </a> </div>
+    
+    
+ </div>
+ </div>
+ </div>
+
+  <br>
+        <footer>
+        <p>Copyright &copy; 2023  <img src="https://i.postimg.cc/vT2qvD6w/1652236607904-removebg.png" alt="logo">  All Rights Reserved.</p>
+    </footer>
+    
+           <script src="https://code.jquery.com/jquery-3.6.1.js" ></script>
+
+    <script>
+    	
+$(document).ready(function(){
+  $("#look_tv_here").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $(".livebbtv-item").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+
+
+
+
+
+        $(document).ready(function(){
+            $(".bx").click(function(){
+               $("#drop").slideToggle("fast"); 
+            });
+        });
+
+    </script>
+    <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https: // unpkg .com / ionicons @ 5.5.2 / dist / ionicons / ionicons.js"></script>
+  <script>
+	
+(() => {
+	let TypingSpeed = 50;
+	let NxtMsgDelay = 1000;
+	let CharacterPos = 0;
+	let MsgBuffer = "";
+	let MsgIndex = 0;
+	let delay;
+	let id = document.getElementById("typing-text");
+	let messages =
+[
+	"Welcome To My Website!",
+	"Watch Live Channels",
+	"Thank's for visiting Varun-iptv website"
+]
+
+	// https://www.html-code-generator.com/html/typewriter-text-scroller
+	const StartTyping = () => {
+		if (CharacterPos != messages[MsgIndex].length) {
+			MsgBuffer += messages[MsgIndex].charAt(CharacterPos);
+			id.value = MsgBuffer+(CharacterPos != messages[MsgIndex].length-1 ? "_":"");
+			delay = TypingSpeed;
+			id.scrollTop = id.scrollHeight; 
+		} else {
+			delay = NxtMsgDelay;
+			MsgBuffer   = "";
+			CharacterPos = -1;
+			if (MsgIndex!= messages.length-1){
+				MsgIndex++;
+			}else {
+				MsgIndex = 0;
+			}
+		}
+		CharacterPos++;
+		setTimeout(StartTyping, delay);
+	}
+	StartTyping();
+})();
+
+</script>
+  <script  src="./script.js"></script>
+<script> 
+  $(document).ready(function() {
+      var ddlFilterTableRow = $('select.ddlFilterTableRow'),
+        headerCount = $('#headerCount');
+      headerCount.html('select a filter or use search');
+      ddlFilterTableRow.on('change', function() {
+        ddlFilterTableRow.attr('disabled', 'disabled');
+        var records = $('#livebbtvTable').find('.livebbtv-item');
+        records.hide();
+        var critriaAttributes = [];
+        ddlFilterTableRow.each(function() {
+          var $this = $(this),
+            $selectedLength = $this.find(':selected').length,
+            $critriaAttribute = '';
+          if ($selectedLength > 0 && $this.val() != '0') {
+            if ($selectedLength == 1) {
+              $critriaAttribute += '[data-' + $this.data('attribute') + '*="' + $this.val() + '"]';
+            } else {
+              var $startDataAttribute = '[data-' + $this.data('attribute') + '*="',
+                $endDataAttribute = '"]',
+                $selectedValues = $this.val().toString();
+
+              $critriaAttribute += $startDataAttribute + $selectedValues.replaceAll(',', ($endDataAttribute + ',' + $startDataAttribute)) + $endDataAttribute;
+            }
+            critriaAttributes.push($critriaAttribute);
+          }
+        });
+        var $showRecords = records;
+        if (critriaAttributes.length > 0) {
+          $.each(critriaAttributes, function(i, filterValue) {
+            $showRecords = $showRecords.filter(filterValue);
+          });
+        }
+        $showRecords.show();
+        headerCount.html($showRecords.length + ' channels filtered');
+        ddlFilterTableRow.removeAttr('disabled');
+        $(".filterinput").val('');
+      });
+      $(".filterinput").keyup(function() {
+        var filter = $(this).val(),
+          count = 0;
+        $('select.ddlFilterTableRow').prop('selectedIndex',0);
+        $(".livebbtv-item").each(function() {
+          if ($(this).text().search(new RegExp(filter, "i")) < 0) {
+            $(this).fadeOut();
+          } else {
+            $(this).show();
+            count++;
+          }
+        });
+      });
+    });
+    
+    </script>
+<script> 
+	
+    const up = document.querySelector('.up')
+
+window.addEventListener('scroll', () => {
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+    up.style.display = "block"
+  } else {
+    up.style.display = "none"
+  }
+  })
+  
+  up.addEventListener('click', () => {
+  document.body.scrollTop = 0
+  document.documentElement.scrollTop = 0
+})
+
+window.addEventListener('scroll', () => {
+  if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
+    htmlbar.classList.add('activehtml')
+    cssbar.classList.add('activecss')
+    jsbar.classList.add('activejs')
+  }
+})
+</script>
+</body>
+</html>
